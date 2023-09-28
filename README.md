@@ -47,7 +47,7 @@ If executing in the background:
 
 8.  To stop the script, run `fg` to bring the background job to the foreground. Then press `Ctrl + C`. It will execute the cleanup function and exit gracefully.
 
-## Example
+### Example
 
 Here's an example of how to use the script:
 
@@ -59,3 +59,48 @@ This will compile `my_program.c`, run the resulting executable, and continuously
 
 Feel free to customize the script or add additional cleanup tasks as needed.
 
+## Node-server-start
+
+This bash script simplifies the process of setting up a Node.js server with Express, body-parser, and cors. It also creates a basic project structure for your Node.js application.
+
+### Prerequisites
+
+Before using this script, ensure you have the following prerequisites:
+
+- **Node.js and npm:** Make sure you have Node.js and npm installed on your system. If not, you can download and install them from [https://nodejs.org/](https://nodejs.org/).
+
+### Usage
+
+To use this script, follow these steps:
+
+1. Download the script and save it to the directory where you want to create your Node.js project.
+
+2. Open your terminal and navigate to the directory where you saved the script.
+
+3. Make the script executable by running the following command:
+
+   ```bash
+   chmod u+x node-server-start.sh
+    ```
+Run the script by executing the following command:
+
+```
+./node-server-start.sh
+```
+The script will prompt you to enter a name for your Node.js project. Enter a suitable name when prompted and press Enter.
+
+It will create a directory with the project name, initialize a package.json file with default values, and install the required dependencies (Express, body-parser, and cors).
+
+The script will generate a index.js file with a basic setup for your Node.js server, including a simple "Hello, World!" route.
+
+Finally, it will start the Node.js server, and you'll see a message indicating that the server is running on a specific port.
+
+### Example
+Here's an example of how to use the script:
+
+```bash
+./node-server-start.sh
+```
+This will create a new Node.js project, set up the server, and start it, all with just a few simple steps.
+
+Feel free to customize the generated server file and add more routes and functionality to your Node.js application as needed.
