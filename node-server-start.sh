@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('Server is running on port ' + port);
 });
-" > server.js
+" > index.js
 
 # Start the server
-node server.js
+node index.js
