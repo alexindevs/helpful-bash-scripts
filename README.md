@@ -4,6 +4,7 @@ A compilation of helpful bash scripts.
 ## Scripts included
 1. Recompile
 2. Node-server-start
+3. TS server setup
 
 ## Recompile.sh
 
@@ -104,3 +105,58 @@ Here's an example of how to use the script:
 This will create a new Node.js project, set up the server, and start it, all with just a few simple steps.
 
 Feel free to customize the generated server file and add more routes and functionality to your Node.js application as needed.
+
+
+Certainly! Let's continue with the information for the `ts-server-setup.sh` script.
+
+## TS-server-setup.sh
+
+This bash script streamlines the process of setting up a Node.js project with TypeScript, including the installation of necessary dependencies and the generation of a basic project structure.
+
+### Prerequisites
+
+Before using this script, ensure you have the following prerequisites:
+
+- **Node.js and npm:** Make sure you have Node.js and npm installed on your system. If not, you can download and install them from [https://nodejs.org/](https://nodejs.org/).
+
+### Usage
+
+To use this script, follow these steps:
+
+1. Download the script and save it to the directory where you want to create your TypeScript Node.js project.
+
+2. Open your terminal and navigate to the directory where you saved the script.
+
+3. Make the script executable by running the following command:
+
+   ```bash
+   chmod u+x ts-server-setup.sh
+   ```
+
+4. Run the script by executing the following command:
+
+   ```bash
+   ./ts-server-setup.sh
+   ```
+
+5. The script will prompt you to enter a name for your Node.js project. Enter a suitable name when prompted and press Enter.
+
+6. It will create a directory with the project name, initialize a `package.json` file with default values, and install the dependencies for the application (typescript, @types/node, express, body-parser, cors, bcrypt, jsonwebtoken, mongoose, joi, winston, @types/winston, uuid).
+
+7. The script will generate a `tsconfig.json` file with TypeScript configuration for your project.
+
+8. It will create a `src` folder with a basic `server.ts` file containing a simple "Hello, World!" route and a setup for Express server.
+
+9. Finally, it will start the TypeScript compiler in watch mode, allowing you to develop with automatic compilation.
+
+### Example
+
+Here's an example of how to use the script:
+
+```bash
+./ts-server-setup.sh
+```
+
+This will create a new TypeScript Node.js project, set up the necessary dependencies, and start the TypeScript compiler in watch mode, making it easy to develop and test your application.
+
+Feel free to customize the generated server file, add more routes, and enhance your TypeScript Node.js application as needed.
