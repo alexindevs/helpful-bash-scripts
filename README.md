@@ -5,6 +5,7 @@ A compilation of helpful bash scripts.
 1. Recompile
 2. Node-server-start
 3. TS server setup
+4. Git commit per file script
 
 ## Recompile.sh
 
